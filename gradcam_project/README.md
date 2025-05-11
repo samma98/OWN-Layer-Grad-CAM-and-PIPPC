@@ -1,6 +1,6 @@
 # Grad-CAM Project
 
-This project implements Grad-CAM (Gradient-weighted Class Activation Mapping), a technique for visualizing the regions of an image that are important for a model's predictions. It provides a way to understand and interpret deep learning models, particularly convolutional neural networks (CNNs).
+This project implements OWN-Layer Grad-CAM (Occlusion-Weighted N-Layer Gradient-weighted Class Activation Mapping), a technique for visualizing the regions of an image that are important for a model's predictions. It provides a way to understand and interpret deep learning models, particularly convolutional neural networks (CNNs).
 
 ## Project Structure
 
@@ -11,13 +11,13 @@ The project is organized into several directories and files:
   - **`__init__.py`**: Makes the data directory a Python package.
 
 - **notebooks/**: Jupyter Notebooks for quick experimentation.
-  - **demo_gradcam.ipynb**: Example notebook for running Grad-CAM with a model.
+  - **demo_ownlayer_gradcam.ipynb**: Example notebook for running Grad-CAM with a model.
 
 - **src/**: Source code for the project.
   - **`__init__.py`**: Makes the src directory a Python package.
-  - **gradcam/**: Core Grad-CAM functionality.
+  - **ownlayer_gradcam/**: Core OWN-Layer Grad-CAM functionality.
     - **`__init__.py`**: Initializes the gradcam package.
-    - **gradcam.py**: Main code for Grad-CAM functionality.
+    - **ownlayer_gradcam.py**: Main code for Grad-CAM functionality.
     - **occlusion.py**: Handles occlusion logic and image masking.
     - **image_utils.py**: Utilities for image loading and preprocessing.
     - **layer_importance.py**: Evaluates layer importance.
@@ -30,12 +30,12 @@ The project is organized into several directories and files:
 
 - **tests/**: Unit tests for the project.
   - **`__init__.py`**: Initializes the tests package.
-  - **test_gradcam.py**: Unit tests for Grad-CAM class and methods.
+  - **test_ownlayer_gradcam.py**: Unit tests for Grad-CAM class and methods.
   - **test_occlusion.py**: Unit tests for image occlusion logic.
 
 - **examples/**: Example scripts and demos for using the Grad-CAM code.
-  - **gradcam_demo.py**: Demonstrates how to use the Grad-CAM class on an image.
-  - **gradcam_model_example.py**: Example of applying Grad-CAM to a trained model.
+  - **ownlayer_gradcam_demo.py**: Demonstrates how to use the Grad-CAM class on an image.
+  - **ownlayer_gradcam_model_example.py**: Example of applying Grad-CAM to a trained model.
 
 - **requirements.txt**: Lists dependencies required for the project.
 
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 ## Usage
 
 1. Prepare your dataset and place sample images in the `data/sample_images/` directory.
-2. Use the provided Jupyter Notebook `notebooks/demo_gradcam.ipynb` for quick experimentation with Grad-CAM.
+2. Use the provided Jupyter Notebook `notebooks/demo_ownlayer_gradcam.ipynb` for quick experimentation with Grad-CAM.
 3. Refer to the example scripts in the `examples/` directory for practical implementations.
 
 ## Contributing

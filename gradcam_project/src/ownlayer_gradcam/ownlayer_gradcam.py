@@ -9,7 +9,7 @@ from .image_utils import read_image
 from .layer_importance import evaluate_layer_importance
 from .visualization import display_results
 
-class NLayerGradCAM:
+class OWNLayerGradCAM:
     def __init__(self, model, n_layers=8, erosion_iterations=1):
         self.model = model
         self.n_layers = n_layers

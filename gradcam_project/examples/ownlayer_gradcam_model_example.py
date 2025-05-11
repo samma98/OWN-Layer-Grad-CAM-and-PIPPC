@@ -4,7 +4,7 @@ from torchvision import models, transforms
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
-from src.gradcam.gradcam import GradCAM
+from src.gradcam.gradcam import OWNLayerGradCAM
 from src.utils.model_utils import load_model
 
 # Function to load and preprocess the image
